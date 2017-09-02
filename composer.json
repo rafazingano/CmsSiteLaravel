@@ -2,7 +2,6 @@
     "name": "confrariaweb/cwsitelaravel",
     "description": "Biblioteca de site padrão para Laravel",
     "type": "library",
-    "version": "1.0",
     "homepage": "https://github.com/confrariaweb/cwsitelaravel",
     "require": {
     },
