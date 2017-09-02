@@ -1,0 +1,29 @@
+{
+    "name": "confrariaweb/cwsitelaravel",
+    "description": "Biblioteca de site padrão para Laravel",
+    "type": "library",
+    "version": "1.0",
+    "homepage": "https://github.com/confrariaweb/cwsitelaravel",
+    "require": {
+        "laravel/laravel": ">=5",
+        "php": "7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConfrariaWeb\\Site\\SiteServiceProvider"
+            ],
+            "aliases": {
+                "Site": "ConfrariaWeb\\Site\\SiteFacade"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
