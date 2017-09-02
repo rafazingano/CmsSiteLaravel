@@ -5,8 +5,6 @@
     "version": "1.0",
     "homepage": "https://github.com/confrariaweb/cwsitelaravel",
     "require": {
-        "laravel/laravel": ">=5.2",
-        "php": ">=7.0"
     },
     "extra": {
         "laravel": {
