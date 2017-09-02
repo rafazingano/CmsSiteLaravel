@@ -1,3 +1,3 @@
 <?php
 
-Route::get('site', 'ConfrariaWeb\Site\Controllers\SiteController@index');
+Route::get('cwsitelaravel', 'ConfrariaWeb\CwSiteLaravel\Controllers\CwSiteLaravelController@index');

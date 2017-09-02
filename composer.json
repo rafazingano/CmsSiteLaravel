@@ -8,10 +8,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ConfrariaWeb\\Site\\SiteServiceProvider"
+                "ConfrariaWeb\\CwSiteLaravel\\CwSiteLaravelServiceProvider"
             ],
             "aliases": {
-                "Site": "ConfrariaWeb\\Site\\SiteFacade"
+                "CwSiteLaravel": "ConfrariaWeb\\CwSiteLaravel\\CwSiteLaravelFacade"
             }
         }
     },

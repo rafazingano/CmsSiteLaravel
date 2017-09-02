@@ -1,10 +1,10 @@
 
 <?php 
-namespace ConfrariaWeb\Site;
+namespace ConfrariaWeb\CwSiteLaravel;
 
 use Illuminate\Support\Facades\Facade;
 
-class SiteFacade extends Facade
+class CwSiteLaravelFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class SiteFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'site';
+        return 'CwSiteLaravel';
     }
 }
