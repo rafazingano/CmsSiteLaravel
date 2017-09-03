@@ -5,6 +5,11 @@
     "homepage": "https://github.com/confrariaweb/cwsitelaravel",
     "require": {
     },
+    "autoload": {
+        "psr-4": {
+            "ConfrariaWeb\\CwSiteLaravel\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
