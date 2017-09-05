@@ -22,7 +22,7 @@ $(document).ready(function () {
                 <table id="myTable" class="table table-striped">
                     <thead>
                         <tr>
-                            @foreach($columns as $c){
+                            @foreach($columns as $c)
                             <th>{{ $c }}</th>
                             @endforeach                            
                         </tr>
@@ -33,7 +33,8 @@ $(document).ready(function () {
                             @foreach($columns as $column){
                             <th>{{ $c->$column }}</th>
                             @endforeach
-                        </tr>                        
+                        </tr>
+                        @endforeach                        
                     </tbody>
                 </table>
             </div>

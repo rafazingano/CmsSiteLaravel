@@ -1,8 +1,8 @@
 <?php
-namespace ConfrariaWeb\CwSiteLaravel\Controllers;
+namespace ConfrariaWeb\CwSiteLaravel\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use ConfrariaWeb\CwSiteLaravelSite\Models\Post;
+use ConfrariaWeb\CwSiteLaravel\Models\Post;
 
 class CwSiteLaravelPostController extends Controller
 {
@@ -23,4 +23,10 @@ class CwSiteLaravelPostController extends Controller
         $data['data'] = Post::all();
         return view('cwsitelaravel::eliteadmin.layouts.data-table', $data);
     }
+    
+    public function create()
+    {
+        return view('cwsitelaravel::eliteadmin.posts.form');
+    }
+    
 }

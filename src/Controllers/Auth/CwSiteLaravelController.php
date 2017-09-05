@@ -1,5 +1,5 @@
 <?php
-namespace ConfrariaWeb\CwSiteLaravel\Controllers;
+namespace ConfrariaWeb\CwSiteLaravel\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 //use ConfrariaWeb\Site\Models\Site;

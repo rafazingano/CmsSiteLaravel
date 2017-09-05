@@ -13,7 +13,7 @@ class CwSiteLaravelServiceProvider extends ServiceProvider {
         View::share('layout', $layout);
 
         $this->loadViewsFrom(__DIR__ . '/Views', 'cwsitelaravel');
-        $this->loadMigrationsFrom(__DIR__ . '/Migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
         $this->loadTranslationsFrom(__DIR__ . '/Translations', 'cwsitelaravel');
 
@@ -23,8 +23,8 @@ class CwSiteLaravelServiceProvider extends ServiceProvider {
     }
 
     public function register() {
-        //$this->app->make('ConfrariaWeb\CwSiteLaravel\Controllers\CwSiteLaravelController');
-        //$this->app->make('ConfrariaWeb\CwSiteLaravel\Controllers\CwSiteLaravelPostController');
+        //$this->app->make('ConfrariaWeb\CwSiteLaravel\Controllers\CwSiteLaravelController\Auth');
+        //$this->app->make('ConfrariaWeb\CwSiteLaravel\Controllers\CwSiteLaravelPostController\Auth');
     }
 
 }

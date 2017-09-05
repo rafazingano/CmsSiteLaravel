@@ -1,6 +1,6 @@
 <?php
 
-namespace ConfrariaWeb\CwSiteLaravelSite\Models;
+namespace ConfrariaWeb\CwSiteLaravel\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
