@@ -10,9 +10,9 @@
 <script src="{{ asset('assets/eliteadmin/plugins/bower_components/html5-editor/wysihtml5-0.3.0.js') }}"></script>
 <script src="{{ asset('assets/eliteadmin/plugins/bower_components/html5-editor/bootstrap-wysihtml5.js') }}"></script>
 <script>
-    $(document).ready(function () {
-        $('.textarea_editor').wysihtml5();
-    });
+$(document).ready(function () {
+    $('.textarea_editor').wysihtml5();
+});
 </script>
 <script>
     jQuery(document).ready(function () {
@@ -26,7 +26,8 @@
 @endpush
 
 @section('content')
-<form>
+<form action="{{ route('posts.store') }}" method="post">
+    {{ csrf_field() }}
     <div class="row">
         <div class="col-md-8">
             <div class="white-box">
@@ -76,13 +77,25 @@
             <div class="white-box">
                 <h3 class="box-title m-b-0">Conteúdo</h3>
                 <p class="text-muted m-b-30">Bootstrap html5 editor</p>
-                <form method="post">
-                    <div class="form-group">
-                        <textarea class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
-                    </div>
-                </form>
+
+                <div class="form-group">
+                    <textarea class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <div class="white-box">
+                <div class="text-right">
+                    <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                    <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </form>
 @endsection

@@ -4,7 +4,7 @@ namespace ConfrariaWeb\CwSiteLaravel\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Category extends Model
 {
 
     /**
@@ -13,7 +13,7 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'slug', 'content', 'user_id'
+        'title', 'slug', 'content',
     ];
 
 }
